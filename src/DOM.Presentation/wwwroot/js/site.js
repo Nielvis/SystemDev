@@ -1,0 +1,1 @@
+﻿urlBase = `${window.location.protocol}//${window.location.host}`;
