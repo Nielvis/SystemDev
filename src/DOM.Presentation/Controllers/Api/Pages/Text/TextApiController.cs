@@ -8,14 +8,14 @@ namespace DOM.Presentation.Controllers.Api
 {
     [Route("v1/api/text")]
     [ApiController]
-    public class TextApiController : ControllerBase
+    public class PostTextApiController : ControllerBase
     {
-        private readonly ILogger<TextApiController> _logger;
+        private readonly ILogger<PostTextApiController> _logger;
 
         private readonly IDbService _dbService;
 
-        public TextApiController(
-                ILogger<TextApiController> logger,
+        public PostTextApiController(
+                ILogger<PostTextApiController> logger,
                 IDbService dbService
             ) 
         {
