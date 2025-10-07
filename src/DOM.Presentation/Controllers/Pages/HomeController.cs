@@ -36,6 +36,10 @@ namespace DOM.Presentation.Controllers.Pages
         {
             return View();
         }
+        public IActionResult Admin()
+        {
+            return View();
+        }
         public IActionResult Privacy()
         {
             return View();
