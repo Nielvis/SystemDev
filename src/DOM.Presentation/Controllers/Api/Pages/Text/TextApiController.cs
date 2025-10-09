@@ -1,6 +1,5 @@
 ﻿using DOM.Presentation.Entities.test_db;
 using DOM.Presentation.Implementation.Interfaces;
-using DOM.Presentation.Models.Entities.Test;
 using DOM.Presentation.Models.Entities.Text;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,14 +7,14 @@ namespace DOM.Presentation.Controllers.Api
 {
     [Route("v1/api/text")]
     [ApiController]
-    public class PostTextApiController : ControllerBase
+    public class TextApiController : ControllerBase
     {
-        private readonly ILogger<PostTextApiController> _logger;
+        private readonly ILogger<TextApiController> _logger;
 
         private readonly IDbService _dbService;
 
-        public PostTextApiController(
-                ILogger<PostTextApiController> logger,
+        public TextApiController(
+                ILogger<TextApiController> logger,
                 IDbService dbService
             ) 
         {

@@ -40,6 +40,10 @@ namespace DOM.Presentation.Controllers.Pages
         {
             return View();
         }
+        public  IActionResult User()
+        {
+            return View();
+        }
         public IActionResult Privacy()
         {
             return View();

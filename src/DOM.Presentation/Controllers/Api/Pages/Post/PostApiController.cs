@@ -16,7 +16,7 @@ namespace DOM.Presentation.Controllers.Api
         public PostApiController(
                 ILogger<PostApiController> logger,
                 IDbService dbService
-            ) 
+            )
         {
             _logger = logger;
             _dbService = dbService;
@@ -65,7 +65,7 @@ namespace DOM.Presentation.Controllers.Api
         {
             var Response = _dbService.Execute($"DELETE FROM test_db.dbo.[Post] WHERE [Uid] = '{uid}'");
 
-            if(Response > 0)
+            if (Response > 0)
                 return Ok();
 
             return BadRequest();

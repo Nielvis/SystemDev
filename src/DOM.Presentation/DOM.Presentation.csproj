@@ -16,12 +16,10 @@
   </ItemGroup>
 
   <ItemGroup>
-  </ItemGroup>
-
-  <ItemGroup>
     <None Include="Views\Home\Admin.cshtml" />
     <None Include="Views\Home\Product.cshtml" />
     <None Include="Views\Home\Post.cshtml" />
+    <None Include="Views\Home\User.cshtml" />
     <None Include="Views\Home\Text.cshtml" />
   </ItemGroup>
 

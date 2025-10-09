@@ -65,3 +65,21 @@ GO
 
 ALTER TABLE [dbo].[Post] ADD  CONSTRAINT [DF_Post_Uid]  DEFAULT (newid()) FOR [Uid]
 GO
+
+CREATE TABLE [dbo].[User](
+	[Uid] [uniqueidentifier] NOT NULL,
+	[Name] [varchar](150) NOT NULL,
+	[Email] [varchar](300) NOT NULL,
+	[Password] [varchar](5000) NOT NULL,
+	[Gender] [varchar] (50) NOT NULL,
+	[BirthDate] [date] NOT NULL,
+	[CadastreDate] [datetime] NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	CONSTRAINT [PK_User] PRIMARY KEY CLUSTERED 
+(
+	[Uid] ASC
+) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[User] ADD  CONSTRAINT [DF_User_Uid]  DEFAULT (newid()) FOR [Uid]
+GO
